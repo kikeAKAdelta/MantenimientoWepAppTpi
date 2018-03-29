@@ -4,9 +4,8 @@
              http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
 
-  <persistence-unit name="Mantenimiento">
-      
-    <class>uesocc.ingenieria.entity.Calendario</class>
+    <persistence-unit name="Mantenimiento">
+            <class>uesocc.ingenieria.entity.Calendario</class>
       
     <properties>
         <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
@@ -22,6 +21,11 @@
         
         </properties>
     </properties>
-  </persistence-unit>
+        
+        
+        
+    </persistence-unit>
+      
+
 
 </persistence>
