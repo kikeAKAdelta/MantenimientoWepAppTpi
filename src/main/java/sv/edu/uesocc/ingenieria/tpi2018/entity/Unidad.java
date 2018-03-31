@@ -126,7 +126,7 @@ public class Unidad implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Unidad[ idUnidad=" + idUnidad + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Unidad[ idUnidad=" + idUnidad + " ]";
     }
     
 }

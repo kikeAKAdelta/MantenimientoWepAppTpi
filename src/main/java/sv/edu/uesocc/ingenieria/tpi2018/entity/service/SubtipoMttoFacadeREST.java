@@ -5,8 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.tpi2018.entity.service;
 
-import sv.edu.uesocc.ingenieria.tpi2018.entity.SubtipoMtto;
-import sv.edu.uesocc.ingenieria.tpi2018.entity.SubtipoMttoPK;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -21,13 +19,15 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.PathSegment;
+import sv.edu.uesocc.ingenieria.tpi2018.entity.SubtipoMtto;
+import sv.edu.uesocc.ingenieria.tpi2018.entity.SubtipoMttoPK;
 
 /**
  *
  * @author ricky
  */
 @Stateless
-@Path("entity.subtipomtto")
+@Path("sv.edu.uesocc.ingenieria.tpi2018.entity.subtipomtto")
 public class SubtipoMttoFacadeREST extends AbstractFacade<SubtipoMtto> {
 
     @PersistenceContext(unitName = "Mantenimiento")

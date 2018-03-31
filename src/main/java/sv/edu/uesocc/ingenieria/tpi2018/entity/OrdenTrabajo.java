@@ -148,7 +148,7 @@ public class OrdenTrabajo implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.OrdenTrabajo[ idOrdenTrabajo=" + idOrdenTrabajo + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.OrdenTrabajo[ idOrdenTrabajo=" + idOrdenTrabajo + " ]";
     }
     
 }

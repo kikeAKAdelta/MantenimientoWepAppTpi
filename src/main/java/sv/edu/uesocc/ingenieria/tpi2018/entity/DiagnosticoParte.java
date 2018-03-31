@@ -109,7 +109,7 @@ public class DiagnosticoParte implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.DiagnosticoParte[ diagnosticoPartePK=" + diagnosticoPartePK + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.DiagnosticoParte[ diagnosticoPartePK=" + diagnosticoPartePK + " ]";
     }
     
 }

@@ -142,7 +142,7 @@ public class Solicitud implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Solicitud[ idSolicitud=" + idSolicitud + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Solicitud[ idSolicitud=" + idSolicitud + " ]";
     }
     
 }

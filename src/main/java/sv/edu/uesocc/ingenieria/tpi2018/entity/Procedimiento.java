@@ -128,7 +128,7 @@ public class Procedimiento implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Procedimiento[ idProcedimiento=" + idProcedimiento + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Procedimiento[ idProcedimiento=" + idProcedimiento + " ]";
     }
     
 }

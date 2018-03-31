@@ -126,7 +126,7 @@ public class Equipo implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Equipo[ idEquipo=" + idEquipo + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Equipo[ idEquipo=" + idEquipo + " ]";
     }
     
 }

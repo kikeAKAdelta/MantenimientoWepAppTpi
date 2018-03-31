@@ -107,7 +107,7 @@ public class Pasos implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Pasos[ idPasos=" + idPasos + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Pasos[ idPasos=" + idPasos + " ]";
     }
     
 }

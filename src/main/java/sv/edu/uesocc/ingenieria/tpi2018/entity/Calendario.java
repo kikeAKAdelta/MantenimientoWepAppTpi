@@ -117,7 +117,7 @@ public class Calendario implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Calendario[ idCalendario=" + idCalendario + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Calendario[ idCalendario=" + idCalendario + " ]";
     }
     
 }

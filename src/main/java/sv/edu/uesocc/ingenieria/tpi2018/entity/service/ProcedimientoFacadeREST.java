@@ -5,7 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.tpi2018.entity.service;
 
-import sv.edu.uesocc.ingenieria.tpi2018.entity.Procedimiento;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -19,13 +18,14 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import sv.edu.uesocc.ingenieria.tpi2018.entity.Procedimiento;
 
 /**
  *
  * @author ricky
  */
 @Stateless
-@Path("entity.procedimiento")
+@Path("sv.edu.uesocc.ingenieria.tpi2018.entity.procedimiento")
 public class ProcedimientoFacadeREST extends AbstractFacade<Procedimiento> {
 
     @PersistenceContext(unitName = "Mantenimiento")

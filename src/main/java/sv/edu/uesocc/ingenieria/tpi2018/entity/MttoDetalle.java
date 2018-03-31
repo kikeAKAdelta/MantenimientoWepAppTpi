@@ -124,7 +124,7 @@ public class MttoDetalle implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.MttoDetalle[ idMttoDetalle=" + idMttoDetalle + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.MttoDetalle[ idMttoDetalle=" + idMttoDetalle + " ]";
     }
     
 }

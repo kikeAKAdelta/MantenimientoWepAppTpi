@@ -98,7 +98,7 @@ public class SubtipoMtto implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.SubtipoMtto[ subtipoMttoPK=" + subtipoMttoPK + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.SubtipoMtto[ subtipoMttoPK=" + subtipoMttoPK + " ]";
     }
     
 }

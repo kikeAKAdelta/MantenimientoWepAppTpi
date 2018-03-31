@@ -174,7 +174,7 @@ public class Parte implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Parte[ idParte=" + idParte + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Parte[ idParte=" + idParte + " ]";
     }
     
 }

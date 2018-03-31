@@ -111,7 +111,7 @@ public class Responsable implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Responsable[ idResponsable=" + idResponsable + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Responsable[ idResponsable=" + idResponsable + " ]";
     }
     
 }

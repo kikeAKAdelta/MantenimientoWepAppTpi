@@ -102,7 +102,7 @@ public class Prioridad implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Prioridad[ idPrioridad=" + idPrioridad + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Prioridad[ idPrioridad=" + idPrioridad + " ]";
     }
     
 }

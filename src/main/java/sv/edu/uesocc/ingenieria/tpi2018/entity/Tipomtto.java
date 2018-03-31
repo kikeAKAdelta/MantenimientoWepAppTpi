@@ -115,7 +115,7 @@ public class Tipomtto implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.Tipomtto[ idTipomtto=" + idTipomtto + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.Tipomtto[ idTipomtto=" + idTipomtto + " ]";
     }
     
 }

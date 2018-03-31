@@ -88,7 +88,7 @@ public class ExcepcionCalendario implements Serializable {
 
     @Override
     public String toString() {
-        return "entity.ExcepcionCalendario[ idExcepcion=" + idExcepcion + " ]";
+        return "sv.edu.uesocc.ingenieria.tpi2018.entity.ExcepcionCalendario[ idExcepcion=" + idExcepcion + " ]";
     }
     
 }

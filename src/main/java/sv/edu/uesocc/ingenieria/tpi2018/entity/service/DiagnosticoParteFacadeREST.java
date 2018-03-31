@@ -5,8 +5,6 @@
  */
 package sv.edu.uesocc.ingenieria.tpi2018.entity.service;
 
-import sv.edu.uesocc.ingenieria.tpi2018.entity.DiagnosticoParte;
-import sv.edu.uesocc.ingenieria.tpi2018.entity.DiagnosticoPartePK;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -21,13 +19,15 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.PathSegment;
+import sv.edu.uesocc.ingenieria.tpi2018.entity.DiagnosticoParte;
+import sv.edu.uesocc.ingenieria.tpi2018.entity.DiagnosticoPartePK;
 
 /**
  *
  * @author ricky
  */
 @Stateless
-@Path("entity.diagnosticoparte")
+@Path("sv.edu.uesocc.ingenieria.tpi2018.entity.diagnosticoparte")
 public class DiagnosticoParteFacadeREST extends AbstractFacade<DiagnosticoParte> {
 
     @PersistenceContext(unitName = "Mantenimiento")
