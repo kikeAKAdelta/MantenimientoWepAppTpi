@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package uesocc.ingenieria.definiciones;
+package sv.edu.uesocc.ingenieria.tpi2018.entity;
 
 import java.io.Serializable;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,9 +15,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -24,32 +28,36 @@ import javax.validation.constraints.Size;
  */
 @Entity
 @Table(name = "unidad")
+@XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Calendario.findAll", query = "SELECT c FROM Unidad c")
-    , @NamedQuery(name = "Calendario.findByIdUnidad", query = "SELECT c FROM Unidad c WHERE c.idUnidad = :idUnidad")
-    , @NamedQuery(name = "Calendario.findByNombreUnidad", query = "SELECT c FROM Unidad c WHERE c.nombreUnidad = :nombreUnidad")})
+    @NamedQuery(name = "Unidad.findAll", query = "SELECT u FROM Unidad u")
+    , @NamedQuery(name = "Unidad.findByIdUnidad", query = "SELECT u FROM Unidad u WHERE u.idUnidad = :idUnidad")
+    , @NamedQuery(name = "Unidad.findByNombreUnidad", query = "SELECT u FROM Unidad u WHERE u.nombreUnidad = :nombreUnidad")})
 public class Unidad implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
-    @Column(name = "id_unidad", nullable = false)
+    @Column(name = "id_unidad")
     private Integer idUnidad;
-    
-    @NotNull
-    @Basic(optional = false)
-    @Size(max = 300)
-    @Column(name = "nombre_unidad", length = 300)
+    @Size(max = 100)
+    @Column(name = "nombre_unidad")
     private String nombreUnidad;
+    @OneToMany(mappedBy = "idUnidad")
+    private Collection<Parte> parteCollection;
+    @OneToMany(mappedBy = "idUnidad")
+    private Collection<Solicitud> solicitudCollection;
+    @OneToMany(mappedBy = "idUnidad")
+    private Collection<Equipo> equipoCollection;
 
-    public Unidad(){}
+    public Unidad() {
+    }
 
-    public Unidad(Integer idUnidad, String nombreUnidad) {
+    public Unidad(Integer idUnidad) {
         this.idUnidad = idUnidad;
-        this.nombreUnidad = nombreUnidad;
-    }    
-    
+    }
+
     public Integer getIdUnidad() {
         return idUnidad;
     }
@@ -66,7 +74,35 @@ public class Unidad implements Serializable {
         this.nombreUnidad = nombreUnidad;
     }
 
-   
+    @XmlTransient
+    @JsonIgnore
+    public Collection<Parte> getParteCollection() {
+        return parteCollection;
+    }
+
+    public void setParteCollection(Collection<Parte> parteCollection) {
+        this.parteCollection = parteCollection;
+    }
+
+    @XmlTransient
+    @JsonIgnore
+    public Collection<Solicitud> getSolicitudCollection() {
+        return solicitudCollection;
+    }
+
+    public void setSolicitudCollection(Collection<Solicitud> solicitudCollection) {
+        this.solicitudCollection = solicitudCollection;
+    }
+
+    @XmlTransient
+    @JsonIgnore
+    public Collection<Equipo> getEquipoCollection() {
+        return equipoCollection;
+    }
+
+    public void setEquipoCollection(Collection<Equipo> equipoCollection) {
+        this.equipoCollection = equipoCollection;
+    }
 
     @Override
     public int hashCode() {
@@ -90,7 +126,7 @@ public class Unidad implements Serializable {
 
     @Override
     public String toString() {
-        return "uesocc.ingenieria.definiciones.Unidad[ id=" + idUnidad + " ]";
+        return "entity.Unidad[ idUnidad=" + idUnidad + " ]";
     }
     
 }
