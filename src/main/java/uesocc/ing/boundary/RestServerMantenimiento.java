@@ -21,49 +21,45 @@ import uesocc.ingenieria.pojosMantenimiento.*;
 public class RestServerMantenimiento implements Serializable {
     
     
-    
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public <T> Response getEntidad(@QueryParam("entidad") T entidad){
+    public <T> int getEntidad(@QueryParam("entidadGet") T entidad){
         
-        if (entidad !=null ) {
-            Response.status(200).entity(entidad).build();
+        if (entidad != null) {
+            return Response.Status.OK.getStatusCode();
         }
-        
-        return Response.status(Response.Status.NOT_FOUND).build();
+        return Response.Status.NOT_FOUND.getStatusCode();
     }
     
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    public <T> Response postEntidad(@QueryParam("entidad")T entidad){
+    public <T> int postEntidad(@QueryParam("entidadPut")T entidad){
         
         if (entidad !=null ) {
-            return Response.status(Response.Status.CREATED).entity(entidad).build();
+            return Response.Status.CREATED.getStatusCode();
         }
-        
-        return Response.status(Response.Status.NOT_IMPLEMENTED).build();
+        return Response.Status.NOT_IMPLEMENTED.getStatusCode();
     }
     
     @PUT
     @Produces(MediaType.APPLICATION_JSON)
-    public <T> Response putEntidad(@QueryParam("entidad") T entidad){
+    public <T> int putEntidad(@QueryParam("entidadPut") T entidad){
         
         if (entidad !=null ) {
-            Response.status(Response.Status.OK).entity(entidad).build();
+              return Response.Status.CREATED.getStatusCode();
         }
-        
-        return Response.status(Response.Status.NOT_MODIFIED).build();
+        return Response.Status.NOT_MODIFIED.getStatusCode(); 
     }
     
     @DELETE
     @Produces(MediaType.APPLICATION_JSON)
-    public <T> Response deleteEntidad(@QueryParam("entidad") T entidad){
+    public <T> int deleteEntidad(@QueryParam("entidadDelete") T entidad){
         
         if (entidad !=null ) {
-            return Response.status(Response.Status.OK).entity(entidad).build();
+            return Response.Status.OK.getStatusCode();
         }
         
-        return Response.status(Response.Status.NOT_FOUND).build();
+        return Response.Status.NOT_FOUND.getStatusCode();
     }
     
 }
