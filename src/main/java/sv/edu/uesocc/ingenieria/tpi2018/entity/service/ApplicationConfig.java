@@ -33,11 +33,15 @@ public class ApplicationConfig extends Application {
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.DetalleOrdenTrabajoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.DiagnosticoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.DiagnosticoParteFacadeREST.class);
+        resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.EquipoFacadeREST.class);
+        resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.EstadoDetalleOrdenTrabajoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.EstadoFacadeREST.class);
+        resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.ExcepcionCalendarioFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.MttoDetalleFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.OrdenTrabajoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.ParteFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.PasosFacadeREST.class);
+        resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.PasosProcedimientoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.PrioridadFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.ProcedimientoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.ResponsableFacadeREST.class);
