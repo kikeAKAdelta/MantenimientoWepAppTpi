@@ -33,9 +33,7 @@ public class ApplicationConfig extends Application {
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.DetalleOrdenTrabajoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.DiagnosticoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.DiagnosticoParteFacadeREST.class);
-        resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.EquipoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.EstadoFacadeREST.class);
-        resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.ExcepcionCalendarioFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.MttoDetalleFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.OrdenTrabajoFacadeREST.class);
         resources.add(sv.edu.uesocc.ingenieria.tpi2018.entity.service.ParteFacadeREST.class);
