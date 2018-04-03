@@ -22,7 +22,8 @@ import org.mockito.Mockito;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
-import uesocc.ingenieria.pojosMantenimiento.*;
+
+import sv.edu.uesocc.ingenieria.tpi2018.entity.*;
 
 
 /**
@@ -64,7 +65,7 @@ public class RestServerMantenimientoTest {
     @Test
     public void testGetEntidad() {
         System.out.println("getEntidad");
-        Marca entidad = new Marca(1,"hola");
+         Calendario entidad = new Calendario(1);
         RestServerMantenimiento instance = new RestServerMantenimiento();
         int expResult = mockResponse.getStatus();
         int result = instance.getEntidad(entidad);
@@ -77,7 +78,7 @@ public class RestServerMantenimientoTest {
     @Test
     public void testPostEntidad() {
         System.out.println("postEntidad");
-        Modelo entidad = new Modelo(1,"hp");
+        Calendario entidad = new Calendario(1);
         RestServerMantenimiento instance = new RestServerMantenimiento();
         int expResult = mockResponse1.getStatus();
         int result = instance.postEntidad(entidad);
@@ -92,7 +93,7 @@ public class RestServerMantenimientoTest {
     @Test
     public void testPutEntidad() {
         System.out.println("putEntidad");
-        Marca entidad = new Marca(3,"five");
+        Calendario entidad = new Calendario(1);
         RestServerMantenimiento instance = new RestServerMantenimiento();
         int expResult = mockResponse1.getStatus();
         int result = instance.putEntidad(entidad);
@@ -107,7 +108,7 @@ public class RestServerMantenimientoTest {
     @Test
     public void testDeleteEntidad() {
         System.out.println("deleteEntidad");
-        Marca entidad =new Marca(4,"alv") ;
+        Calendario entidad = new Calendario(1);
         RestServerMantenimiento instance = new RestServerMantenimiento();
         int expResult = mockResponse.getStatus();
         int result = instance.deleteEntidad(entidad);
