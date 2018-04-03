@@ -91,27 +91,6 @@ public class CalendarioFacadeRESTTest {
         mockEntityManager.close();
     }
 
-    /**
-     * Test of edit method, of class CalendarioFacadeREST.
-     */
-//    @Test
-//    public void testEdit_GenericType() throws Exception {
-//        
-//        System.out.println("edit");
-//        Calendario entity = new Calendario();
-//        Mockito.doNothing().when(mockCalendarioFacade).edit(entity);
-//        //fail("The test case is a prototype.");
-//    }
-
-    /**
-     * Test of remove method, of class CalendarioFacadeREST.
-     */
-//    @Test
-//    public void testRemove_GenericType() throws Exception {
-//        System.out.println("remove");
-//        Calendario entity=new Calendario();
-//        Mockito.doNothing().when(mockCalendarioFacade).remove(entity);
-//    }
 
     /**
      * Test of find method, of class CalendarioFacadeREST.
